@@ -1,0 +1,22 @@
+{% extends 'base/main.html' %}
+
+{% block content %}
+<div class="rooms-container">
+    <h1>Study Rooms</h1>
+    
+    <div class="rooms-list">
+        <!-- Sample rooms for now -->
+        <div class="room">
+            <h3>Python Programming</h3>
+            <p>Join us to learn Python fundamentals and advanced concepts.</p>
+            <a href="{% url 'room' 1 %}">Join Room</a>
+        </div>
+
+        <div class="room">
+            <h3>Web Development</h3>
+            <p>HTML, CSS, JavaScript, and modern frameworks.</p>
+            <a href="{% url 'room' 2 %}">Join Room</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,14 @@
+<header>
+    <a href="{% url 'home' %}">
+        <h2>StudyConnect</h2>
+    </a>
+
+    <form method="GET" action="{% url 'home' %}">
+        <input type="text" name="q" placeholder="Search study rooms..."/>
+    </form>
+
+    <nav>
+        <a href="{% url 'home' %}">Study Rooms</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
